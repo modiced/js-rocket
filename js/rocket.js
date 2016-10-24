@@ -1,3 +1,6 @@
+setTimeout(function(){
+	location.href = 'rocket.html';
+},2000);
 var timer = null;
 var countdownNumber = 10;
 var changeState = function (state) {
@@ -18,7 +21,7 @@ var changeState = function (state) {
 			var randomNumber = Math.round (Math.random()*10);
 			console.log('randomNumber: ',randomNumber);
 			//success
-			if (randomNumber >5) {
+			if (randomNumber >3) {
 				changeState(4);
 			} else {
 				changeState(5);  //oh no!
